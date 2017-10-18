@@ -1,0 +1,10 @@
+#!/usr/bin/clisp                                                                    |CRM Buffer                 Size Mode             File                               
+(defun c:wwq (/ a pt1)
+  (setq a 0)
+  (while (< a 10)
+    (setq a (+ 1 a))
+    (setq pt1 (list a a))
+    (command "_circle" "_none" pt1 1)
+    )
+  (princ)
+  )
